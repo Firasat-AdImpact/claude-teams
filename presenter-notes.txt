@@ -1,0 +1,12 @@
+Presenter Notes — Claude at the org
+====================================
+Keyed to the slide numbers in claude-kickoff-deck.html.
+
+Slide 8 — Skill-building demo
+  Open Customize > Skills (or ask Claude to use skill-creator) and build a
+  real skill from the audience's answer, live, on screen.
+
+Slide 9 — Risk (part 1 — settings)
+  DJ: mention that a page read during web search can carry hidden
+  instructions (prompt injection) — turn web search off when the
+  conversation involves proprietary data. Not on the slide, spoken only.

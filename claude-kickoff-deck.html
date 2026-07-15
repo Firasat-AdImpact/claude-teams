@@ -16,17 +16,21 @@
 
 *{box-sizing:border-box;}
 
+html, body{
+  margin:0;
+  height:100%;
+  background:var(--ink);
+  overflow:hidden;
+}
+
 .deck-root{
   background:var(--ink);
   color:var(--paper);
   font-family:'Inter',sans-serif;
-  width:100%;
-  min-height:640px;
+  width:100vw;
   height:100vh;
-  max-height:900px;
   position:relative;
   overflow:hidden;
-  border-radius:4px;
   display:flex;
   flex-direction:column;
 }
@@ -380,7 +384,6 @@ h2{
 
     <!-- Slide 1: Warm open -->
     <div class="slide active" data-stage="0">
-      <div class="eyebrow">Session 1 of 3</div>
       <div class="presenter-tag">Presenter — Firasat</div>
       <h1>Let's talk about Claude.</h1>
       <p class="sub">Not a sales pitch. A working session on what it does, what's new for the team, and one thing you'll try this week.</p>
@@ -530,7 +533,6 @@ h2{
         <input type="text" id="demoInput" placeholder="Type the task someone shouts out, then press Enter...">
         <div class="capture-display" id="demoDisplay">Waiting for a volunteer...</div>
       </div>
-      <div class="hint">Presenter note: open Customize &gt; Skills (or ask Claude to use skill-creator) and build a real skill from that answer, live, on screen.</div>
     </div>
 
     <!-- Slide 9: Risk (part 1 — settings) -->
@@ -543,7 +545,6 @@ h2{
         <div class="principle"><div class="pnum">02</div><div class="ptext"><b>Don't turn on Cowork's "Skip all approvals" mode</b>The current name for what used to be called "Act without asking."</div></div>
         <div class="principle"><div class="pnum">03</div><div class="ptext"><b>Don't enable "Always allow" for connector tools</b>That setting removes the per-action approval gate that's the actual security control.</div></div>
       </div>
-      <!-- Speaker note (DJ, not on-slide): a page read during web search can carry hidden instructions (prompt injection) — turn web search off when the conversation involves proprietary data. -->
     </div>
 
     <!-- Slide 10: Risk (part 2 — habits) -->
