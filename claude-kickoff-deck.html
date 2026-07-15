@@ -31,45 +31,6 @@
   flex-direction:column;
 }
 
-/* ---- top chrome ---- */
-.chrome{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:18px 28px;
-  border-bottom:1px solid rgba(238,241,244,0.08);
-  flex-shrink:0;
-}
-.brand{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:11px;
-  letter-spacing:0.14em;
-  text-transform:uppercase;
-  color:var(--paper-dim);
-}
-.brand b{color:var(--brass-bright); font-weight:500;}
-
-.timer{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-family:'IBM Plex Mono',monospace;
-  font-size:13px;
-  color:var(--paper-dim);
-}
-.timer button{
-  background:none;
-  border:1px solid rgba(238,241,244,0.2);
-  color:var(--paper-dim);
-  font-family:inherit;
-  font-size:11px;
-  padding:4px 9px;
-  border-radius:var(--radius);
-  cursor:pointer;
-}
-.timer button:hover{border-color:var(--brass); color:var(--brass-bright);}
-.timer .clock{color:var(--paper); min-width:44px; display:inline-block;}
-
 /* ---- slides ---- */
 .slides{
   position:relative;
@@ -410,59 +371,10 @@ h2{
 @media (max-width:640px){
   .readouts, .poll-grid, .team-grid{grid-template-columns:1fr;}
   .slide{padding:28px 22px;}
-  .ticker{flex-wrap:wrap; gap:18px !important;}
-}
-
-/* ---- stat ticker (AdImpact-style animated counters) ---- */
-.ticker{
-  display:flex;
-  gap:0;
-  padding:14px 28px;
-  background:var(--ink-2);
-  border-bottom:1px solid rgba(238,241,244,0.08);
-  flex-shrink:0;
-}
-.ticker-stat{
-  flex:1;
-  padding:0 24px;
-  border-right:1px solid rgba(238,241,244,0.1);
-  text-align:left;
-}
-.ticker-stat:last-child{border-right:none;}
-.ticker-num{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:clamp(18px,2.2vw,26px);
-  font-weight:500;
-  color:var(--brass-bright);
-  line-height:1;
-}
-.ticker-label{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:9.5px;
-  letter-spacing:0.1em;
-  text-transform:uppercase;
-  color:var(--paper-dim);
-  margin-top:6px;
 }
 </style>
 
 <div class="deck-root" id="deckRoot" tabindex="0">
-
-  <div class="chrome">
-    <div class="brand">Claude at the org &nbsp;·&nbsp; <b>Session 1 of 3</b></div>
-    <div class="timer">
-      <span class="clock" id="clock">00:00</span>
-      <button id="timerToggle">Start</button>
-      <button id="timerReset">Reset</button>
-    </div>
-  </div>
-
-  <div class="ticker">
-    <div class="ticker-stat"><div class="ticker-num" data-target="5">0</div><div class="ticker-label">Teams in the room</div></div>
-    <div class="ticker-stat"><div class="ticker-num" data-target="30">0</div><div class="ticker-label">Minutes, max</div></div>
-    <div class="ticker-stat"><div class="ticker-num" data-target="11">0</div><div class="ticker-label">Slides</div></div>
-    <div class="ticker-stat"><div class="ticker-num" data-target="1">0</div><div class="ticker-label">Ask by the end</div></div>
-  </div>
 
   <div class="slides" id="slides">
 
@@ -621,11 +533,11 @@ h2{
       <div class="hint">Presenter note: open Customize &gt; Skills (or ask Claude to use skill-creator) and build a real skill from that answer, live, on screen.</div>
     </div>
 
-    <!-- Slide 9: Risk -->
+    <!-- Slide 9: Risk (part 1 — settings) -->
     <div class="slide" data-stage="2">
       <div class="eyebrow">Handle with judgment</div>
       <div class="presenter-tag">Presenter — DJ</div>
-      <h2>Treat it like a capable new hire, not a toy</h2>
+      <h2>Three settings to never turn on</h2>
       <div class="principles">
         <div class="principle"><div class="pnum">01</div><div class="ptext"><b>Never use --dangerously-skip-permissions in Claude Code</b>No exceptions — it removes every safety check at once.</div></div>
         <div class="principle"><div class="pnum">02</div><div class="ptext"><b>Don't turn on Cowork's "Skip all approvals" mode</b>The current name for what used to be called "Act without asking."</div></div>
@@ -634,7 +546,19 @@ h2{
       <!-- Speaker note (DJ, not on-slide): a page read during web search can carry hidden instructions (prompt injection) — turn web search off when the conversation involves proprietary data. -->
     </div>
 
-    <!-- Slide 10: Ideas -->
+    <!-- Slide 10: Risk (part 2 — habits) -->
+    <div class="slide" data-stage="2">
+      <div class="eyebrow">Handle with judgment</div>
+      <div class="presenter-tag">Presenter — DJ</div>
+      <h2>Three habits to keep, regardless</h2>
+      <div class="principles">
+        <div class="principle"><div class="pnum">01</div><div class="ptext"><b>Review before anything irreversible</b>Sending, deleting, publishing — check the step before it happens.</div></div>
+        <div class="principle"><div class="pnum">02</div><div class="ptext"><b>Never hand it credentials directly</b>Passwords, keys, and tokens stay out of the conversation.</div></div>
+        <div class="principle"><div class="pnum">03</div><div class="ptext"><b>Know what's connected before you ask it to act</b>If it can touch a system, know which one and why.</div></div>
+      </div>
+    </div>
+
+    <!-- Slide 11: Ideas -->
     <div class="slide" data-stage="2">
       <div class="eyebrow">Before we close</div>
       <div class="presenter-tag">Presenter — Firasat</div>
@@ -647,7 +571,7 @@ h2{
       <div class="idea-empty" id="ideaEmpty">No ideas yet — read a few out loud as they come in.</div>
     </div>
 
-    <!-- Slide 11: Close -->
+    <!-- Slide 12: Close -->
     <div class="slide" data-stage="2">
       <div class="eyebrow">Closing ask</div>
       <div class="presenter-tag">Presenter — Firasat</div>
@@ -661,27 +585,12 @@ h2{
   <div class="nav">
     <button class="nav-btn" id="prevBtn">← Prev</button>
     <div class="dots" id="dots"></div>
-    <span class="counter" id="counter">1 / 11</span>
+    <span class="counter" id="counter">1 / 12</span>
     <button class="nav-btn" id="nextBtn">Next →</button>
   </div>
 </div>
 
 <script>
-(function(){
-  document.querySelectorAll('.ticker-num').forEach(el=>{
-    const target = parseInt(el.getAttribute('data-target'),10);
-    const duration = 900;
-    const start = performance.now();
-    function tick(now){
-      const p = Math.min(1, (now-start)/duration);
-      const eased = 1 - Math.pow(1-p, 3);
-      el.textContent = Math.round(eased*target);
-      if(p<1) requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  });
-})();
-
 (function(){
   const slides = Array.from(document.querySelectorAll('.slide'));
   const total = slides.length;
@@ -774,29 +683,5 @@ h2{
   }
   document.getElementById('ideaAdd').addEventListener('click', addIdea);
   ideaInput.addEventListener('keydown', (e)=>{ if(e.key==='Enter'){ e.preventDefault(); addIdea(); } });
-
-  // ---- Timer ----
-  let seconds = 0, running = false, timerId = null;
-  const clockEl = document.getElementById('clock');
-  const toggleBtn = document.getElementById('timerToggle');
-  function fmt(s){
-    const m = Math.floor(s/60).toString().padStart(2,'0');
-    const sec = (s%60).toString().padStart(2,'0');
-    return m+':'+sec;
-  }
-  toggleBtn.addEventListener('click', ()=>{
-    running = !running;
-    toggleBtn.textContent = running ? 'Pause' : 'Start';
-    if(running){
-      timerId = setInterval(()=>{ seconds++; clockEl.textContent = fmt(seconds); }, 1000);
-    } else {
-      clearInterval(timerId);
-    }
-  });
-  document.getElementById('timerReset').addEventListener('click', ()=>{
-    seconds = 0; clockEl.textContent = fmt(0);
-    running = false; toggleBtn.textContent = 'Start';
-    clearInterval(timerId);
-  });
 })();
 </script>
