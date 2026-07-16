@@ -63,15 +63,6 @@ html, body{
   color:var(--brass-bright);
   margin-bottom:18px;
 }
-.presenter-tag{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:10px;
-  letter-spacing:0.12em;
-  text-transform:uppercase;
-  color:var(--paper-dim);
-  opacity:0.65;
-  margin:-10px 0 18px;
-}
 h1{
   font-family:'Space Grotesk',sans-serif;
   font-weight:700;
@@ -384,7 +375,6 @@ h2{
 
     <!-- Slide 1: Warm open -->
     <div class="slide active" data-stage="0">
-      <div class="presenter-tag">Presenter — Firasat</div>
       <h1>Let's talk about Claude.</h1>
       <p class="sub">Not a sales pitch. A working session on what it does, what's new for the team, and one thing you'll try this week.</p>
     </div>
@@ -392,7 +382,6 @@ h2{
     <!-- Slide 2: Poll -->
     <div class="slide" data-stage="0">
       <div class="eyebrow">Quick pulse check</div>
-      <div class="presenter-tag">Presenter — Firasat</div>
       <h2>Where are you with Claude today?</h2>
       <div class="poll-grid" id="pollGrid">
         <button class="poll-opt" data-opt="0"><div class="poll-fill" id="fill-0"></div><span>Daily driver</span><b id="count-0">0 votes</b></button>
@@ -406,7 +395,6 @@ h2{
     <!-- Slide 3: Capability tour -->
     <div class="slide" data-stage="0">
       <div class="eyebrow">First, the basics</div>
-      <div class="presenter-tag">Presenter — Firasat</div>
       <h2>What Claude can actually do</h2>
       <p class="sub" style="max-width:560px;">Tap your team — or just watch all three, everyone's workflow borrows from the others more than you'd think.</p>
       <div class="team-picker">
@@ -463,7 +451,6 @@ h2{
     <!-- Slide 4: Features + access -->
     <div class="slide" data-stage="0">
       <div class="eyebrow">What's actually available</div>
-      <div class="presenter-tag">Presenter — DJ</div>
       <h2>What's included, and where to find it</h2>
       <div class="table-wrap">
         <table class="feature-table">
@@ -484,7 +471,6 @@ h2{
     <!-- Slide 5: Which model -->
     <div class="slide" data-stage="0">
       <div class="eyebrow">Choosing a model</div>
-      <div class="presenter-tag">Presenter — DJ</div>
       <h2>Fast vs. capable — pick per task, not once</h2>
       <p class="sub">Simple task → Haiku. Everyday work → Sonnet. Hard problem → Opus.</p>
       <div class="readouts">
@@ -499,7 +485,6 @@ h2{
     <!-- Slide 6: Prompt library (shared project) -->
     <div class="slide" data-stage="1">
       <div class="eyebrow">Stop losing the good ones</div>
-      <div class="presenter-tag">Presenter — DJ</div>
       <h2>A shared Project for the team's go-to prompts</h2>
       <p class="sub">Every team has a few prompts that just work. Right now they're buried in someone's chat history. Put them in a shared Project instead — anyone on the team can pull them into a new chat.</p>
       <div class="readouts" style="max-width:640px;">
@@ -511,7 +496,6 @@ h2{
     <!-- Slide 7: The bigger picture -->
     <div class="slide" data-stage="1">
       <div class="eyebrow">Zooming out</div>
-      <div class="presenter-tag">Presenter — Firasat</div>
       <h1 style="font-size:clamp(26px,3.6vw,48px);">"One plus one plus one plus one equals one and a half."</h1>
       <p class="sub">Individual productivity is up. Org-level output hasn't followed — yet. That's the gap the next two sessions are about closing.</p>
       <p class="quote-attr">— an engineering leader with ~1,000 engineers on Claude Code, describing the gap</p>
@@ -527,7 +511,6 @@ h2{
     <!-- Slide 8: Skill-building demo -->
     <div class="slide" data-stage="1">
       <div class="eyebrow">See it live</div>
-      <div class="presenter-tag">Presenter — DJ</div>
       <h2>What's something you do the same way every week?</h2>
       <div class="capture-box">
         <input type="text" id="demoInput" placeholder="Type the task someone shouts out, then press Enter...">
@@ -538,7 +521,6 @@ h2{
     <!-- Slide 9: Risk (part 1 — settings) -->
     <div class="slide" data-stage="2">
       <div class="eyebrow">Handle with judgment</div>
-      <div class="presenter-tag">Presenter — DJ</div>
       <h2>Three settings to never turn on</h2>
       <div class="principles">
         <div class="principle"><div class="pnum">01</div><div class="ptext"><b>Never use --dangerously-skip-permissions in Claude Code</b>No exceptions — it removes every safety check at once.</div></div>
@@ -550,7 +532,6 @@ h2{
     <!-- Slide 10: Risk (part 2 — habits) -->
     <div class="slide" data-stage="2">
       <div class="eyebrow">Handle with judgment</div>
-      <div class="presenter-tag">Presenter — DJ</div>
       <h2>Three habits to keep, regardless</h2>
       <div class="principles">
         <div class="principle"><div class="pnum">01</div><div class="ptext"><b>Review before anything irreversible</b>Sending, deleting, publishing — check the step before it happens.</div></div>
@@ -562,7 +543,6 @@ h2{
     <!-- Slide 11: Ideas -->
     <div class="slide" data-stage="2">
       <div class="eyebrow">Before we close</div>
-      <div class="presenter-tag">Presenter — Firasat</div>
       <h2>What will you try this week?</h2>
       <div class="idea-form">
         <input type="text" id="ideaInput" placeholder="Type an idea someone calls out...">
@@ -575,7 +555,6 @@ h2{
     <!-- Slide 12: Close -->
     <div class="slide" data-stage="2">
       <div class="eyebrow">Closing ask</div>
-      <div class="presenter-tag">Presenter — Firasat</div>
       <h1 style="font-size:clamp(26px,3.6vw,44px);">Try one thing before next time.</h1>
       <p class="sub">That's the whole ask. Not a new habit — one real task, this week.</p>
       <p class="sub" style="margin-top:18px;">Future sessions get more tailored per team. This one was the only one we needed everyone at.</p>
@@ -584,7 +563,6 @@ h2{
     <!-- Slide 13: Questions -->
     <div class="slide" data-stage="2">
       <div class="eyebrow">Open floor</div>
-      <div class="presenter-tag">Presenter — Firasat</div>
       <h1 style="font-size:clamp(26px,3.6vw,48px);">Questions?</h1>
       <p class="sub">Anything you're unsure about, anything you want us to cover next time — now's the time.</p>
     </div>

@@ -1,12 +1,83 @@
-Presenter Notes — Claude at the org
-====================================
-Keyed to the slide numbers in claude-kickoff-deck.html.
+Presenter Script — Claude at the org
+=====================================
+Solo presenter: Firasat. Keyed to slide numbers in claude-kickoff-deck.html.
+Read line by line — this is the actual script, not a summary.
 
-Slide 8 — Skill-building demo
-  Open Customize > Skills (or ask Claude to use skill-creator) and build a
-  real skill from the audience's answer, live, on screen.
+SLIDE 1 — Warm open
+Hey everyone, thanks for being here.
+This isn't a sales pitch.
+It's a real working session — what Claude actually does, what's new for us as a team, and one thing you'll try this week.
 
-Slide 9 — Risk (part 1 — settings)
-  DJ: mention that a page read during web search can carry hidden
-  instructions (prompt injection) — turn web search off when the
-  conversation involves proprietary data. Not on the slide, spoken only.
+SLIDE 2 — Poll
+Quick pulse check before we get into it.
+Where are you with Claude today?
+Daily driver, a few times a week, barely touched it, or you don't know where to start.
+Show of hands, or drop it in the chat.
+(Click through the options as people respond, then move on.)
+
+SLIDE 3 — Capability tour
+Let's start with the basics — what Claude can actually do.
+I'll go team by team, but watch all of them, because everyone's workflow borrows from the others more than you'd think.
+Tech — debugging a gnarly error, drafting a PR description, explaining unfamiliar code.
+Sales — drafting a follow-up email, summarizing a call transcript, researching a prospect account.
+Product — turning feedback into a PRD outline, summarizing interview themes, drafting release notes.
+Data Ops — cleaning and validating a messy dataset, writing a SQL query from a plain-English ask, summarizing a dashboard's key changes.
+Marketing — drafting social copy for a launch, turning a blog post into an email newsletter, summarizing campaign performance.
+
+SLIDE 4 — Features + access
+Now, what's actually included, and where do you go to find it.
+Connectors — docs, email, calendar, CRM. Get to them from the plus menu in the chat box, or under Customize, then Connectors. They let Claude pull in context without you re-explaining it every time.
+Skills — under Customize, then Skills. Packaged, reusable expertise for a specific task you do over and over.
+Cowork and Claude Code — separate apps, same subscription. They cover multi-step work, not just back-and-forth chat.
+Shared projects — under the Projects tab. A team's context and go-to prompts live in one place, instead of buried in one person's chat history.
+Admin usage visibility — that's in Organization settings. Just so you know, that one's for managers, not something everyone sees.
+
+SLIDE 5 — Which model
+Let's talk about choosing a model — fast versus capable, picked per task, not once and forgotten.
+Simple task, reach for Haiku. Everyday work, Sonnet is your default. Hard problem, reach for Opus.
+Haiku is the fastest — quick lookups, simple rewrites, basic answers.
+Sonnet is the default — solid for most day-to-day work: drafting, analysis, coding.
+Opus is the most capable — worth it for genuinely hard or high-stakes problems.
+And there's Fable — that's Anthropic's newest tier, alongside Opus.
+You can switch models per conversation right from the picker in the chat box.
+
+SLIDE 6 — Prompt library
+Here's an idea worth stealing — a shared Project for the team's go-to prompts.
+Every team has a few prompts that just work. Right now they're probably buried in someone's chat history. Put them in a shared Project instead, so anyone on the team can pull them into a new chat.
+Quick distinction — a Project's knowledge base is for reusable text: prompts, context, references, the stuff the whole team pulls into any chat. An artifact, like this deck, is for something interactive — a tool, a page, a demo. That's not where your prompts should live.
+
+SLIDE 7 — The bigger picture
+Let's zoom out for a second.
+"One plus one plus one plus one equals one and a half."
+That's a line from an engineering leader with about a thousand engineers on Claude Code, describing a gap.
+Individual productivity is up. Org-level output hasn't followed yet. That's the gap we're trying to close — going from individual, to workflow, to firm.
+
+SLIDE 8 — Skill-building demo
+Let's make this real. What's something you do the same way, every single week? Shout it out.
+(Type the answer into the box as it comes in.)
+Now open Customize, then Skills — or just ask Claude to use skill-creator — and build a real skill from that answer, live, right now, on screen.
+
+SLIDE 9 — Risk, part 1 (settings)
+Treat this like a capable new hire, not a toy. Three settings you should never turn on.
+One — never use dangerously-skip-permissions in Claude Code. No exceptions. It removes every safety check at once.
+Two — don't turn on Cowork's "Skip all approvals" mode. That's just the current name for what used to be called "Act without asking."
+Three — don't enable "Always allow" for connector tools. That setting removes the per-action approval gate, which is the actual security control.
+One more thing worth saying out loud, not on the slide: a page Claude reads during a web search can carry hidden instructions — that's called prompt injection. So if the conversation involves proprietary data, turn web search off for that conversation.
+
+SLIDE 10 — Risk, part 2 (habits)
+Three habits to keep, regardless of the setting.
+One — review before anything irreversible. Sending, deleting, publishing — check the step before it happens.
+Two — never hand it credentials directly. Passwords, keys, and tokens stay out of the conversation.
+Three — know what's connected before you ask it to act. If it can touch a system, know which one, and why.
+
+SLIDE 11 — Ideas
+Before we close, what will you actually try this week? Call it out and I'll add it to the list.
+(Read a few out loud as they come in.)
+
+SLIDE 12 — Close
+That's the whole ask — try one thing before next time. Not a new habit, just one real task, this week.
+Future sessions will get more tailored per team. This one was the only one we needed everyone at.
+
+SLIDE 13 — Questions
+That's it from me. Questions?
+Anything you're unsure about, or anything you want us to cover next time — now's the time.
